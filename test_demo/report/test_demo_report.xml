@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="test_demo_report_id">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.basic_layout">
+
+                <div class="page">
+
+                    <t t-foreach="test_demo_ids" t-as="test">
+                        <span t-esc="test"/><br/>
+                        <span t-field="test.date"/>
+                    </t>
+
+                </div>
+            </t>
+        </t>
+    </template>
+
+</odoo>
